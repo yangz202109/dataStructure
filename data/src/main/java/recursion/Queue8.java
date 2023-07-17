@@ -13,7 +13,6 @@ public class Queue8{
 
     public static void main(String[] args) {
 
-
     }
 
   /*public boolean judge(int n){

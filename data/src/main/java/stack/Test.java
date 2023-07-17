@@ -6,7 +6,7 @@ package stack;
  */
 public class Test {
     public static void main(String[] args) {
-        ArrayStack stack=new ArrayStack(5);
+        ArrayStack stack = new ArrayStack(5);
 
         stack.show();
         System.out.println("==============");
@@ -19,7 +19,7 @@ public class Test {
         //stack.push(6);
         stack.show();
 
-        System.out.println("");
+        System.out.println(" ");
         System.out.println(stack.pop());
         stack.show();
     }

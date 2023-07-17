@@ -8,7 +8,7 @@ import org.junit.Test;
  */
 public class MyTest {
     @Test
-    public void t1 (){
+    public void t1() {
         BinaryTree binaryTree = new BinaryTree();
 
         HeroNode root = new HeroNode(1, "宋江");
@@ -24,7 +24,7 @@ public class MyTest {
         node3.setRight(node5);
 
         binaryTree.preOrder();
-       // System.out.println(binaryTree.backOrderSearch(6));
+        // System.out.println(binaryTree.backOrderSearch(6));
         System.out.println("=======删除后=========");
         binaryTree.delete(4);
         binaryTree.preOrder();
@@ -32,15 +32,15 @@ public class MyTest {
     }
 
     @Test
-    public void t2(){
-        int[] a={1,2,3,4,5,6,7};
+    public void t2() {
+        int[] a = {1, 2, 3, 4, 5, 6, 7};
         ArrayBinaryTree arrayBinaryTree = new ArrayBinaryTree(a);
         arrayBinaryTree.backOrder(0);
 
     }
 
     @Test
-    public void t3(){
+    public void t3() {
         ThreaderBinaryTree tree = new ThreaderBinaryTree();
 
         Role root = new Role(1, "tom");
@@ -57,7 +57,6 @@ public class MyTest {
         role2.setRight(role5);
         role3.setLeft(role6);
 
-
         //tree.midOrder();
         //tree.threadRoles();
 
@@ -65,13 +64,13 @@ public class MyTest {
         tree.threadPreRoles(root);
 
         Role leftRole = role5.getLeft();
-        System.out.println("5号节点的前驱节点是 "+leftRole);
+        System.out.println("5号节点的前驱节点是 " + leftRole);
         Role rightRole = role5.getRight();
-        System.out.println("5号节点的后继节点是  "+rightRole);
+        System.out.println("5号节点的后继节点是  " + rightRole);
 
         /*线索化后的二叉树不能使用二叉树的遍历方式*/
         System.out.println("========线索化遍历后结果==========");
-       // tree.threadMindList();
+        // tree.threadMindList();
         tree.threadPreRolesList();
     }
 

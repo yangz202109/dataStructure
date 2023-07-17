@@ -8,13 +8,13 @@ import org.junit.Test;
  */
 public class MyTest {
     @Test
-    public void t1(){
-        EmpLinkedList linkedList=new EmpLinkedList();
+    public void t1() {
+        EmpLinkedList linkedList = new EmpLinkedList();
         linkedList.print();
-        linkedList.insert(new Emp(1,"tome",5));
-        linkedList.insert(new Emp(2,"rick",34));
-        linkedList.insert(new Emp(3,"summer",55));
-        linkedList.insert(new Emp(4,"lin",21));
+        linkedList.insert(new Emp(1, "tome", 5));
+        linkedList.insert(new Emp(2, "rick", 34));
+        linkedList.insert(new Emp(3, "summer", 55));
+        linkedList.insert(new Emp(4, "lin", 21));
 
         linkedList.print();
 
@@ -26,12 +26,12 @@ public class MyTest {
     }
 
     @Test
-    public void t2(){
+    public void t2() {
         HashTable hashTable = new HashTable(4);
-        hashTable.add(new Emp(1,"tome",7));
-        hashTable.add(new Emp(2,"rick",15));
-        hashTable.add(new Emp(3,"summer",21));
-        hashTable.add(new Emp(4,"lin",33));
+        hashTable.add(new Emp(1, "tome", 7));
+        hashTable.add(new Emp(2, "rick", 15));
+        hashTable.add(new Emp(3, "summer", 21));
+        hashTable.add(new Emp(4, "lin", 33));
 
         hashTable.showHash();
         System.out.println("================");
@@ -45,12 +45,12 @@ public class MyTest {
     }
 
     @Test
-    public void t3(){
-        EmpLinkedList linkedList=new EmpLinkedList();
-        linkedList.insert(new Emp(1,"tome",5));
-        linkedList.insert(new Emp(2,"rick",34));
-        linkedList.insert(new Emp(3,"summer",55));
-        linkedList.insert(new Emp(4,"lin",21));
+    public void t3() {
+        EmpLinkedList linkedList = new EmpLinkedList();
+        linkedList.insert(new Emp(1, "tome", 5));
+        linkedList.insert(new Emp(2, "rick", 34));
+        linkedList.insert(new Emp(3, "summer", 55));
+        linkedList.insert(new Emp(4, "lin", 21));
         linkedList.print();
 
         System.out.println("=======反转单向链表=====");

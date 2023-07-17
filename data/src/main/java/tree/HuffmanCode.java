@@ -39,7 +39,7 @@ public class HuffmanCode {
       /*  for (Map.Entry<Byte, Integer> map : counts.entrySet()) {
             nodes.add(new CodeNode(map.getKey(), map.getValue()));
         }*/
-        counts.forEach((key,value)-> nodes.add(new CodeNode(key,value)));
+        counts.forEach((key, value) -> nodes.add(new CodeNode(key, value)));
         return nodes;
     }
 

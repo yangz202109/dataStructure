@@ -1,7 +1,6 @@
 package tree;
 
 import org.jetbrains.annotations.NotNull;
-
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -57,7 +56,6 @@ public class HuffmanTree {
 
             //加入新的
             arrayList.add(parent);
-
         }
         return arrayList.get(0);
     }

@@ -7,7 +7,7 @@ package tree;
  */
 public class ArrayBinaryTree {
     /*存放节点的数组*/
-    private int[] arr;
+    private final int[] arr;
 
     public ArrayBinaryTree(int[] arr) {
         this.arr = arr;

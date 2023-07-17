@@ -1,9 +1,5 @@
 package queue;
 
-import org.junit.Test;
-
-import java.util.Queue;
-
 /**
  * @author yangz
  * @date 2022/3/23 - 11:31
@@ -24,10 +20,5 @@ public class text {
         queue1.addQueue(8);
         queue1.showQueue();
 
-    }
-    @Test
-    public void t(){
-        int i= (0 + 5)/2;
-        System.out.println(i);
     }
 }

@@ -13,7 +13,7 @@ public class BinaryTree {
         this.root = root;
     }
 
-    /*前序遍历*/
+    /**前序遍历*/
     public void preOrder(){
         if (root !=null){
             root.preOrder();
@@ -22,7 +22,7 @@ public class BinaryTree {
         }
     }
 
-    /*中序遍历*/
+    /**中序遍历*/
     public void midOrder(){
         if (root !=null){
             root.midOrder();
@@ -31,7 +31,7 @@ public class BinaryTree {
         }
     }
 
-    /*后序遍历*/
+    /**后序遍历*/
     public void backOrder(){
         if (root !=null){
             root.backOrder();
@@ -40,7 +40,7 @@ public class BinaryTree {
         }
     }
 
-    /*前序遍历查找*/
+    /**前序遍历查找*/
     public HeroNode preOrderSearch(int num){
         if (root != null) {
             return root.preOrderSearch(num);
@@ -49,7 +49,7 @@ public class BinaryTree {
         }
     }
 
-    /*中序遍历查找*/
+    /**中序遍历查找*/
     public HeroNode midOrderSearch(int num){
         if (root != null) {
             return root.midOrderSearch(num);
@@ -58,7 +58,7 @@ public class BinaryTree {
         }
     }
 
-    /*后序遍历查找*/
+    /**后序遍历查找*/
     public HeroNode backOrderSearch(int num){
         if (root != null) {
             return root.backOrderSearch(num);
@@ -67,7 +67,7 @@ public class BinaryTree {
         }
     }
 
-    /*删除节点*/
+    /**删除节点*/
     public void delete(int num){
         if (root == null){
             System.out.println("该二叉树为空");

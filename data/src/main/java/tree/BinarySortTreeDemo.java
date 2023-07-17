@@ -3,6 +3,7 @@ package tree;
 /**
  * @author yangz
  * @date 2022/8/17 - 11:01
+ * 二叉排序树
  */
 public class BinarySortTreeDemo {
     public static void main(String[] args) {
@@ -14,14 +15,12 @@ public class BinarySortTreeDemo {
             sortTree.add(new SortNode(a));
         }
         sortTree.midPre();
-
     }
 }
 
 /*排序树*/
 class BinarySortTree {
     private SortNode root;
-
 
     public void add(SortNode node) {
         if (root == null) {
@@ -40,7 +39,7 @@ class BinarySortTree {
     }
 }
 
-/*节点类*/
+/**节点类*/
 class SortNode {
     int value;
     SortNode left;
@@ -79,8 +78,6 @@ class SortNode {
                 this.right.add(node);
             }
         }
-
-
     }
 
     /*中序遍历*/
@@ -93,5 +90,4 @@ class SortNode {
             this.right.midPre();
         }
     }
-
 }
