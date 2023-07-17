@@ -5,11 +5,12 @@ import java.io.Serializable;
 /**
  * @author yangz
  * @date 2022/4/23 - 10:26
+ * 测试序列化
  */
 public class MyUser implements Serializable {
-    private int id;
-    private String name;
-    private int age;
+    private final int id;
+    private final String name;
+    private final int age;
 
     public MyUser(int id, String name, int age) {
         this.id = id;

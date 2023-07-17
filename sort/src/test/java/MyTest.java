@@ -1,5 +1,7 @@
 import org.junit.Test;
 import java.io.*;
+import java.nio.file.Files;
+
 import chapter.MyUser;
 
 /**
@@ -37,7 +39,7 @@ public class MyTest {
         MyUser user = new MyUser(1, "aaa", 22);
 
         try {
-            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file));
+            ObjectOutputStream oos = new ObjectOutputStream(Files.newOutputStream(file.toPath()));
             oos.writeObject(user);
             oos.flush();
             oos.close();
@@ -49,7 +51,7 @@ public class MyTest {
     public void t4() throws IOException, ClassNotFoundException {
         File file = new File("E:\\tmp\\tt.txt");
 
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
+        ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(file.toPath()));
 
         MyUser user = (MyUser) ois.readObject();
         ois.close();
